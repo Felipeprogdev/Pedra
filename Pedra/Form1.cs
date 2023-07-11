@@ -72,17 +72,23 @@ namespace Pedra
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile(@"..\..\Debug\net6.0-windows\imagens\tesoura.jpg");
+            pictureBox1.Image = Properties.Resources.tesoura;
             label1.Text = tesoura.Text;
             string escolha = bot();
 
-            try
+            if (escolha == "Pedra")
             {
-                pictureBox2.Image = Image.FromFile(@"..\..\Debug\net6.0-windows\imagens\" + escolha.ToLower() + ".jpg");
+                pictureBox2.Image = Properties.Resources.pedra;
             }
-            catch
+
+            else if (escolha == "Tesoura")
             {
-                pictureBox2.Image = Image.FromFile(@"..\..\Debug\net6.0-windows\imagens\" + escolha.ToLower() + ".png");
+                pictureBox2.Image = Properties.Resources.tesoura;
+            }
+
+            else
+            {
+                pictureBox2.Image = Properties.Resources.papel;
             }
 
             label3.Text = escolha;
@@ -135,18 +141,24 @@ namespace Pedra
 
         private void pedra_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile(@"..\..\Debug\net6.0-windows\imagens\pedra.png");
+            pictureBox1.Image = Properties.Resources.pedra;
             label1.Text = pedra.Text;
             string escolha = bot();
             label3.Text = escolha;
 
-            try
+            if (escolha == "Pedra")
             {
-                pictureBox2.Image = Image.FromFile(@"..\..\Debug\net6.0-windows\imagens\" + escolha.ToLower() + ".jpg");
+                pictureBox2.Image = Properties.Resources.pedra;
             }
-            catch
+
+            else if (escolha == "Tesoura")
             {
-                pictureBox2.Image = Image.FromFile(@"..\..\Debug\net6.0-windows\imagens\" + escolha.ToLower() + ".png");
+                pictureBox2.Image = Properties.Resources.tesoura;
+            }
+
+            else
+            {
+                pictureBox2.Image = Properties.Resources.papel;
             }
 
             int resul = jogo(label1.Text, escolha);
@@ -199,17 +211,23 @@ namespace Pedra
 
         private void papel_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile(@"..\..\Debug\net6.0-windows\imagens\papel.jpg");
+            pictureBox1.Image = Properties.Resources.papel;
             label1.Text = papel.Text;
             string escolha = bot();
 
-            try
+            if (escolha == "Pedra")
             {
-                pictureBox2.Image = Image.FromFile(@"..\..\Debug\net6.0-windows\imagens\" + escolha.ToLower() + ".jpg");
+                pictureBox2.Image = Properties.Resources.pedra;
             }
-            catch
+
+            else if (escolha == "Tesoura")
             {
-                pictureBox2.Image = Image.FromFile(@"..\..\Debug\net6.0-windows\imagens\" + escolha.ToLower() + ".png");
+                pictureBox2.Image = Properties.Resources.tesoura;
+            }
+
+            else
+            {
+                pictureBox2.Image = Properties.Resources.papel;
             }
 
             label3.Text = escolha;
