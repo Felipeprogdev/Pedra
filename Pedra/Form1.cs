@@ -66,6 +66,8 @@ namespace Pedra
 
         private void button1_Click(object sender, EventArgs e)
         {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.tesouraost);
+            player.Play();
             pictureBox1.Image = Properties.Resources.tesoura;
             label1.Text = tesoura.Text;
             string escolha = bot();
@@ -135,6 +137,8 @@ namespace Pedra
 
         private void pedra_Click(object sender, EventArgs e)
         {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.pedraost);
+            player.Play();
             pictureBox1.Image = Properties.Resources.pedra;
             label1.Text = pedra.Text;
             string escolha = bot();
@@ -205,6 +209,8 @@ namespace Pedra
 
         private void papel_Click(object sender, EventArgs e)
         {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.papelost);
+            player.Play();
             pictureBox1.Image = Properties.Resources.papel;
             label1.Text = papel.Text;
             string escolha = bot();
