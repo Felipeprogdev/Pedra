@@ -83,9 +83,9 @@ namespace Pedra.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.IO.UnmanagedMemoryStream semelhante a System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream papelost {
+        internal static System.IO.UnmanagedMemoryStream papel1 {
             get {
-                return ResourceManager.GetStream("papelost", resourceCulture);
+                return ResourceManager.GetStream("papel1", resourceCulture);
             }
         }
         
