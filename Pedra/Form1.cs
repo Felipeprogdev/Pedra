@@ -38,32 +38,26 @@ namespace Pedra
 
         int jogo(string a, string b)
         {
-            string j;
 
 
             if (a == b)
             {
-                j = "e";
                 return 0;
             }
             else if (a == "Tesoura" && b == "Papel")
             {
-                j = "v";
                 return 1;
             }
             else if (a == "Pedra" && b == "Tesoura")
             {
-                j = "v";
                 return 1;
             }
             else if (a == "Papel" && b == "Pedra")
             {
-                j = "v";
                 return 1;
             }
             else
             {
-                j = "d";
                 return 2;
             }
 
